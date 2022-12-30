@@ -5,6 +5,20 @@ alias bpp='source ~/.zshrc'
 alias c='clear'
 alias l='ls -al'
 
+# [nginx]
+alias nginx-start='nginx'
+alias nginx-stop='nginx -s stop'
+alias nginx-reload='nginx -s reload'
+
+# [GIT]
+alias gcm='git checkout master'
+alias gcd='git checkout develop'
+alias gmr='git merge -'
+alias gc-='git checkout'
+alias gcb='git checkout -b'
+alias gfpush='git push --force origin $(git branch --show-current)'
+alias gpush='git push origin $(git branch --show-current)'
+alias gpull='git pull origin $(git branch --show-current)'
 alias git-local-config='git config --local user.name "yongholeeme" && git config --local user.email "inwalter99@gmail.com"'
 
 # [NVM]
