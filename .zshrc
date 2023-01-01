@@ -3,7 +3,10 @@ alias bpp='source ~/.zshrc'
 
 # shortcut
 alias c='clear'
+export CLICOLOR=1
 alias l='ls -al'
+alias ls='ls -G'
+alias ll='ls -lG'
 
 # [nginx]
 alias nginx-start='nginx'
@@ -11,6 +14,7 @@ alias nginx-stop='nginx -s stop'
 alias nginx-reload='nginx -s reload'
 
 # [GIT]
+alias gs='git status'
 alias gcm='git checkout master'
 alias gcd='git checkout develop'
 alias gmr='git merge -'
