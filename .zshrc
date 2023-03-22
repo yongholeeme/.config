@@ -25,6 +25,9 @@ alias gpush='git push origin $(git branch --show-current)'
 alias gpull='git pull origin $(git branch --show-current)'
 alias git-local-config='git config --local user.name "yongholeeme" && git config --local user.email "inwalter99@gmail.com"'
 
+# [PNPM]
+alias pn=pnpm
+
 # [NVM]
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
