@@ -5,6 +5,9 @@ brew install cask
 # [NVM]
 brew install nvm
 
+# [PNPM]
+brew install pnpm
+
 # [Warp]
 brew install --cask warp
 
