@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 [package]
-disabled = true
+format = 'for [$version](208 bold) '
 
 [nodejs]
 format = 'using [$version](bold green) '
@@ -9,27 +9,19 @@ format = 'using [$version](bold green) '
 [git_branch]
 symbol = ''
 
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🔖 '
+
 [git_state]
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
 cherry_pick = '[🍒 PICKING](bold red)'
 
 [git_metrics]
-added_style = 'bold blue'
-format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+disabled = true
   
 [git_status]
 disabled = true
-conflicted = '🏳'
-ahead = '🏎💨'
-behind = '😰'
-diverged = '😵'
-up_to_date = '✓'
-untracked = '🤷'
-stashed = '📦'
-modified = '📝'
-staged = '[++\($count\)](green)'
-renamed = '👅'
-deleted = '🗑'
 
 [username]
 style_user = 'white bold'
