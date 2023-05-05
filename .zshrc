@@ -42,3 +42,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # curl -sS https://starship.rs/install.sh | sh
 export STARSHIP_CONFIG=~/.yongholeeme/starship.toml
 eval "$(starship init zsh)"
+
+# This is for work zsh
+. ~/.yongholeeme/.work.zshrc
