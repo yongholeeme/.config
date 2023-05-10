@@ -8,8 +8,8 @@ alias l='ls -al'
 alias ls='ls -Gt'
 
 # [npm/pnpm]
-alias npm='node ~/.yongholeeme/scripts/pnpmOrNpm.js'
-alias pnpm='node ~/.yongholeeme/scripts/pnpmOrNpm.js'
+alias npm='~/.yongholeeme/scripts/excuteNpmOrPnpm.sh'
+alias pnpm='~/.yongholeeme/scripts/excuteNpmOrPnpm.sh'
 alias pn=pnpm
 
 # [nginx]
