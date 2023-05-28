@@ -25,7 +25,8 @@ alias gfpush='git push --force origin $(git branch --show-current)'
 alias gpush='git push origin $(git branch --show-current)'
 alias gpull='git pull origin $(git branch --show-current)'
 alias gcp='git cherry-pick'
-alias git-local-config='git config --local user.name "yongholeeme" && git config --local user.email "inwalter99@gmail.com"'
+alias git-local-config='git config --local user.name "yongholeeme" && git config --local user.email "yongholeeme@gmail.com"'
+alias git-clear-branch='function _git-clear-branch() { branches=("$@"); if [ ${#branches[@]} -eq 0 ]; then branches=("master"); fi; for branch in "${branches[@]}"; do git branch | grep -v "$branch" | xargs git branch -D; done }; _git-clear-branch'
 
 export PATH=~/.npm-global/bin:$PATH
 
