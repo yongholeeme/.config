@@ -16,3 +16,7 @@ brew install starship
 
 # [Raycast]
 brew install --cask raycast
+
+# [Hidden Bar]
+# https://github.com/dwarvesf/hidden
+brew install --cask hiddenbar
