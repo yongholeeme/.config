@@ -15,7 +15,6 @@ cask "figma"
 cask "karabiner-elements"
 cask "postman"
 
-brew "starship"
 brew "neovim"
 brew "gh"
 
