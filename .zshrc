@@ -59,6 +59,8 @@ load-nvmrc
 # [Homebrew]
 # /bin/bash -c '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)'
 eval "$(/opt/homebrew/bin/brew shellenv)"
+alias b="vi ~/.config/Brewfile"
+alias bb="brew bundle --file ~/.config/Brewfile"
 
 # [Starship]
 # curl -sS https://starship.rs/install.sh | sh
