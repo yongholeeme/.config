@@ -6,6 +6,7 @@ alias config='code ~/.config'
 . $CONFIG/zshrc/nvm.zshrc
 . $CONFIG/zshrc/git.zshrc
 . $CONFIG/zshrc/brew.zshrc
+. $CONFIG/zshrc/nvim.zshrc
 
 if ! [[ -d $CONFIG/zshrc/work ]]; then
   . $CONFIG/zshrc/work/.zshrc 
