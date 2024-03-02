@@ -2,13 +2,13 @@
   "entries": {
     "cask": {
       "warp": {
-        "version": "0.2024.02.20.08.01.stable_02",
+        "version": "0.2024.02.27.08.01.stable_03",
         "options": {
           "full_name": "warp"
         }
       },
       "google-chrome": {
-        "version": "122.0.6261.69",
+        "version": "122.0.6261.94",
         "options": {
           "full_name": "google-chrome"
         }
@@ -20,7 +20,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.86.2",
+        "version": "1.87.0",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -62,7 +62,7 @@
         }
       },
       "figma": {
-        "version": "116.15.15",
+        "version": "116.16.13",
         "options": {
           "full_name": "figma"
         }
