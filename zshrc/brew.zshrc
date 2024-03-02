@@ -1,3 +1,3 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
-alias b="vi ~/.config/Brewfile"
-alias bb="brew bundle --file ~/.config/Brewfile"
+alias b="vi $CONFIG/Brewfile"
+alias bb="brew bundle --file $CONFIG/Brewfile"

@@ -1,11 +1,12 @@
+export CONFIG="$HOME/.config"
 alias config='code ~/.config'
 
-. ~/.config/zshrc/terminal.zshrc
-. ~/.config/zshrc/nginx.zshrc
-. ~/.config/zshrc/nvm.zshrc
-. ~/.config/zshrc/git.zshrc
-. ~/.config/zshrc/brew.zshrc
+. $CONFIG/zshrc/terminal.zshrc
+. $CONFIG/zshrc/nginx.zshrc
+. $CONFIG/zshrc/nvm.zshrc
+. $CONFIG/zshrc/git.zshrc
+. $CONFIG/zshrc/brew.zshrc
 
-if ! [[ -d ~/.config/zshrc/work ]]; then
-  . ~/.config/zshrc/work/.zshrc 
+if ! [[ -d $CONFIG/zshrc/work ]]; then
+  . $CONFIG/zshrc/work/.zshrc 
 fi
