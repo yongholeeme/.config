@@ -1,3 +1,5 @@
+alias config='code ~/.config'
+
 . ~/.config/zshrc/terminal.zshrc
 . ~/.config/zshrc/nginx.zshrc
 . ~/.config/zshrc/nvm.zshrc

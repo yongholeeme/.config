@@ -1,4 +1,3 @@
-echo 'source ~/.yongholeeme/.vimrc' > ~/.vimrc
-
-echo 'source ~/.yongholeeme/.zshrc' > ~/.zshrc
+echo 'source ~/.config/.vimrc' > ~/.vimrc
+echo 'source ~/.config/zshrc/.zshrc' > ~/.zshrc
 source ~/.zshrc
