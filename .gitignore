@@ -1,6 +1,10 @@
 node_modules
 *.swp
 
+zshrc/work
 
-create-branch.js
-.work.zshrc
+simple-update-notifier
+
+raycast
+
+gh
