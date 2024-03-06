@@ -1,4 +1,6 @@
 alias gg='git log'
+alias gs='git status'
+alias gss='git status -s'
 alias gf='git fetch origin'
 alias gcm='gf && git checkout main'
 alias gcd='gf && git checkout develop'
