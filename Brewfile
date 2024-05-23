@@ -18,7 +18,6 @@ cask "postman"
 brew "neovim"
 brew "gh"
 
-brew "nvm"
 brew "wget"
 brew "git"
 brew "curl"
