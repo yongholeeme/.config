@@ -14,10 +14,10 @@ cask "ticktick"
 cask "figma"
 cask "postman"
 cask "deepl"
+cask "rancher"
 
 brew "neovim"
 brew "gh"
-
 brew "wget"
 brew "git"
 brew "curl"
