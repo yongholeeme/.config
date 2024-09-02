@@ -2,13 +2,13 @@
   "entries": {
     "cask": {
       "warp": {
-        "version": "0.2024.08.20.08.02.stable_00",
+        "version": "0.2024.08.27.08.02.stable_02",
         "options": {
           "full_name": "warp"
         }
       },
       "google-chrome": {
-        "version": "128.0.6613.85",
+        "version": "128.0.6613.114",
         "options": {
           "full_name": "google-chrome"
         }
