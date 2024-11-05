@@ -5,7 +5,7 @@
 # vscode: Visual Studio Code extensions
 
 cask "warp"
-cask "google-chrome"
+cask "google-chrome@canary"
 cask "raycast"
 cask "visual-studio-code"
 cask "proxyman"
