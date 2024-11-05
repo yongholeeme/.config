@@ -96,6 +96,12 @@
         "options": {
           "full_name": "rancher"
         }
+      },
+      "google-chrome@canary": {
+        "version": "latest",
+        "options": {
+          "full_name": "google-chrome@canary"
+        }
       }
     },
     "brew": {
