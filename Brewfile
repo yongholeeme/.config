@@ -23,5 +23,3 @@ brew "git"
 brew "curl"
 brew "mas"
 brew "tldr"
-
-mas "vibe", id: 1542568299 
