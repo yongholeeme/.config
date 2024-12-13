@@ -15,5 +15,6 @@ alias gr='git rebase'
 alias gr='function _rebase(){ gf && gc- $1 && gpull && gc- - && git rebase $1};_rebase'
 alias gri='function _rebase_i(){ git rebase -i HEAD~$1};_rebase_i'
 alias gm='git merge'
+alias gu='git reset --soft HEAD~'
 
-alias git-config-user='git config user.name "yongholeeme" && git config user.email "yongholeeme@gmail.com"'
+alias git-config-user='git config user.name "yongholeeme" && git config user.email "yongholeeme@gmail.com" && git config --list'
