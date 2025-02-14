@@ -15,6 +15,7 @@ cask "ticktick"
 cask "figma"
 cask "postman"
 cask "rancher"
+cask "discord"
 
 brew "neovim"
 brew "gh"
