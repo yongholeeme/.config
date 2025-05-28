@@ -14,7 +14,6 @@ cask "zoom"
 cask "ticktick"
 cask "figma"
 cask "postman"
-cask "deepl"
 cask "rancher"
 
 brew "neovim"
