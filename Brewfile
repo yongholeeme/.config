@@ -6,7 +6,7 @@
 tap "homebrew/bundle"
 
 cask "warp"
-cask "google-chrome@canary"
+cask "google-chrome"
 cask "raycast"
 cask "visual-studio-code"
 cask "proxyman"
