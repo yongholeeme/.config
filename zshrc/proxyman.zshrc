@@ -1,1 +1,1 @@
-alias p='set -a && source "/Users/USER/.proxyman/proxyman_env_automatic_setup.sh" && set +a'
+alias p='set -a && source "/Users/USER/Library/Application Support/com.proxyman.NSProxy/app-data/proxyman_env_automatic_setup.sh" && set +a'
