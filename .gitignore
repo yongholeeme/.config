@@ -1,12 +1,34 @@
+# Node.js dependencies
 node_modules
+
+# Editor temporary files
 *.swp
+*.swo
+.DS_Store
 
-zshrc/work
+# Work-specific configurations (private)
+zshrc/work/
+*/work/
 
-simple-update-notifier
+# Application data and caches
+simple-update-notifier/
+configstore/
 
-raycast
+# Personal configurations (often contain tokens/keys)
+raycast/
+gh/
 
-gh
+# Backup directories
+backups/
 
-configstore
+# Logs and temporary files
+*.log
+*.tmp
+
+# Environment files
+.env
+.env.local
+secrets/
+
+# OS generated files
+Thumbs.db

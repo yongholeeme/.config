@@ -1,10 +1,20 @@
+# macOS Dotfiles Brewfile
 # @see https://github.com/Homebrew/homebrew-bundle
-# brew: dependencies
-# cask: Mac applications
-# mas: Mac App Store applications 
-# vscode: Visual Studio Code extensions
+
 tap "homebrew/bundle"
 
+# =============================================================================
+# CLI Tools
+# =============================================================================
+brew "neovim"
+brew "gh"
+brew "wget"
+brew "curl"
+brew "mas"
+
+# =============================================================================
+# Applications
+# =============================================================================
 cask "warp"
 cask "google-chrome"
 cask "raycast"
@@ -17,13 +27,9 @@ cask "postman"
 cask "rancher"
 cask "discord"
 
-brew "neovim"
-brew "gh"
-brew "wget"
-brew "git"
-brew "curl"
-brew "mas"
-
+# =============================================================================
+# VS Code Extensions
+# =============================================================================
 vscode "ahmadawais.shades-of-purple"
 vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
