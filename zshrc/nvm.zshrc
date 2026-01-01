@@ -1,11 +1,28 @@
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# place this after nvm initialization!
+# Lazy load nvm - only loads when nvm/node/npm/npx/pnpm is first called
+lazy_load_nvm() {
+  unset -f nvm node npm npx pnpm pnpx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+}
+
+nvm() { lazy_load_nvm && nvm "$@"; }
+node() { lazy_load_nvm && node "$@"; }
+npm() { lazy_load_nvm && npm "$@"; }
+npx() { lazy_load_nvm && npx "$@"; }
+pnpm() { lazy_load_nvm && pnpm "$@"; }
+pnpx() { lazy_load_nvm && pnpx "$@"; }
+
+# Auto-switch node version when entering directory with .nvmrc
 autoload -U add-zsh-hook
 
 load-nvmrc() {
+  # Ensure nvm is loaded first
+  if ! type nvm_find_nvmrc &>/dev/null; then
+    lazy_load_nvm
+  fi
+
   local nvmrc_path
   nvmrc_path="$(nvm_find_nvmrc)"
 
@@ -27,4 +44,3 @@ load-nvmrc() {
 }
 
 add-zsh-hook chpwd load-nvmrc
-load-nvmrc
