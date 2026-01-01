@@ -10,6 +10,7 @@ alias config='code ~/.config'
 . $CONFIG/zshrc/rancher.zshrc
 . $CONFIG/zshrc/warp.zshrc
 . $CONFIG/zshrc/proxyman.zshrc
+. $CONFIG/zshrc/claude.zshrc
 
 if [[ -d $CONFIG/zshrc/work ]]; then
   . $CONFIG/zshrc/work/.zshrc 
