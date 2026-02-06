@@ -11,6 +11,7 @@ brew "gh"
 brew "wget"
 brew "curl"
 brew "mas"
+brew "fnm"
 
 # =============================================================================
 # Applications
