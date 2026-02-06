@@ -4,9 +4,9 @@ alias config='code ~/.config'
 
 . $CONFIG/zshrc/terminal.zshrc
 . $CONFIG/zshrc/nginx.zshrc
+. $CONFIG/zshrc/brew.zshrc
 . $CONFIG/zshrc/fnm.zshrc
 . $CONFIG/zshrc/git.zshrc
-. $CONFIG/zshrc/brew.zshrc
 . $CONFIG/zshrc/nvim.zshrc
 . $CONFIG/zshrc/rancher.zshrc
 . $CONFIG/zshrc/warp.zshrc
