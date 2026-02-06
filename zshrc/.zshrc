@@ -1,9 +1,10 @@
+export PATH="$HOME/.local/bin:$PATH"
 export CONFIG="$HOME/.config"
 alias config='code ~/.config'
 
 . $CONFIG/zshrc/terminal.zshrc
 . $CONFIG/zshrc/nginx.zshrc
-. $CONFIG/zshrc/nvm.zshrc
+. $CONFIG/zshrc/fnm.zshrc
 . $CONFIG/zshrc/git.zshrc
 . $CONFIG/zshrc/brew.zshrc
 . $CONFIG/zshrc/nvim.zshrc

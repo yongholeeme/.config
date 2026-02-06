@@ -1,4 +1,4 @@
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+curl -fsSL https://fnm.vercel.app/install | bash
 
 echo '### this is overwrited by config/init.sh
 export CONFIG="$HOME/.config"
