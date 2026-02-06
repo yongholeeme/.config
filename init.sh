@@ -1,4 +1,4 @@
-echo '### this is overwrited by config/init.sh
+echo '### this is overwritten by config/init.sh
 export CONFIG="$HOME/.config"
 source $CONFIG/zshrc/.zshrc
 ###' > ~/.zshrc
