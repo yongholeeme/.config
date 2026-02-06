@@ -70,7 +70,7 @@ print_header "Package Managers"
 check_command "brew" "Homebrew"
 check_command "npm" "NPM"
 check_command "node" "Node.js"
-check_command "nvm" "NVM"
+check_command "fnm" "FNM"
 
 print_header "Development Tools"
 check_command "git" "Git"
@@ -95,7 +95,6 @@ print_header "Application Configurations"
 configs=(
     "$HOME/.config/nvim/init.vim:Neovim config"
     "$HOME/.config/gh/config.yml:GitHub CLI config"
-    "$HOME/.config/fish/config.fish:Fish shell config"
     "$HOME/.gitconfig:Git global config"
 )
 
@@ -129,7 +128,6 @@ print_header "Environment Variables"
 important_vars=(
     "CONFIG"
     "PATH"
-    "NVM_DIR"
     "EDITOR"
 )
 

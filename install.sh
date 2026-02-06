@@ -41,14 +41,6 @@ else
     print_warning "Brewfile not found"
 fi
 
-# Install NVM
-if [[ ! -d "$HOME/.nvm" ]]; then
-    print_status "Installing NVM..."
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-else
-    print_status "NVM already installed"
-fi
-
 # Setup zsh configuration
 print_status "Setting up zsh configuration..."
 cat > ~/.zshrc << 'EOF'
@@ -61,7 +53,6 @@ EOF
 # Setup symlinks for other config files
 setup_symlinks() {
     local configs=(
-        "fish/config.fish:$HOME/.config/fish/config.fish"
         "nvim/init.vim:$HOME/.config/nvim/init.vim"
         "gh/config.yml:$HOME/.config/gh/config.yml"
         "gh/hosts.yml:$HOME/.config/gh/hosts.yml"
@@ -81,6 +72,10 @@ setup_symlinks() {
 }
 
 setup_symlinks
+
+# macOS-specific settings
+print_status "Applying macOS settings..."
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Source the new zsh config
 print_status "Reloading shell configuration..."
