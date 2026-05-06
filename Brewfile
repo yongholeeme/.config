@@ -31,18 +31,3 @@ cask "obsidian"
 # Fonts
 # =============================================================================
 cask "font-d2coding-nerd-font"
-
-# =============================================================================
-# VS Code Extensions
-# =============================================================================
-vscode "ahmadawais.shades-of-purple"
-vscode "davidanson.vscode-markdownlint"
-vscode "dbaeumer.vscode-eslint"
-vscode "eamodio.gitlens"
-vscode "editorconfig.editorconfig"
-vscode "esbenp.prettier-vscode"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "github.vscode-github-actions"
-vscode "stylelint.vscode-stylelint"
-vscode "tal7aouy.icons"
