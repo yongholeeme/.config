@@ -45,29 +45,7 @@ fi
 print_status "Setting up dotfile symlinks..."
 bash "$CONFIG_DIR/init.sh"
 
-# Setup symlinks for other config files
-setup_symlinks() {
-    local configs=(
-        "gh/config.yml:$HOME/.config/gh/config.yml"
-        "gh/hosts.yml:$HOME/.config/gh/hosts.yml"
-    )
-
-    for config in "${configs[@]}"; do
-        local source_file="${config%:*}"
-        local target_file="${config#*:}"
-        local target_dir="$(dirname "$target_file")"
-
-        if [[ -f "$CONFIG_DIR/$source_file" ]]; then
-            print_status "Setting up $source_file..."
-            mkdir -p "$target_dir"
-            ln -sf "$CONFIG_DIR/$source_file" "$target_file"
-        fi
-    done
-}
-
-setup_symlinks
-
-# macOS-specific settings
+# Allow VS Code key repeat (disable press-and-hold accent popup)
 print_status "Applying macOS settings..."
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
