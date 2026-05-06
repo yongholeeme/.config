@@ -1,15 +1,12 @@
 # macOS Dotfiles Brewfile
 # @see https://github.com/Homebrew/homebrew-bundle
 
-tap "homebrew/bundle"
-
 # =============================================================================
 # CLI Tools
 # =============================================================================
 brew "gh"
 brew "wget"
 brew "curl"
-brew "mas"
 brew "fnm"
 
 # =============================================================================
