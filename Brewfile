@@ -8,6 +8,7 @@ brew "gh"
 brew "wget"
 brew "curl"
 brew "fnm"
+brew "starship"
 
 # =============================================================================
 # Applications

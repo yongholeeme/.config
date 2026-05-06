@@ -11,6 +11,7 @@ alias config='code ~/.config'
 . $CONFIG/zshrc/proxyman.zshrc
 . $CONFIG/zshrc/vscode.zshrc
 . $CONFIG/zshrc/claude.zshrc
+. $CONFIG/zshrc/starship.zshrc
 
 if [[ -d $CONFIG/zshrc/work ]]; then
   . $CONFIG/zshrc/work/.zshrc
