@@ -76,7 +76,6 @@ print_header "Development Tools"
 check_command "git" "Git"
 check_command "gh" "GitHub CLI"
 check_command "code" "VS Code"
-check_command "nvim" "Neovim"
 
 print_header "Configuration Files"
 check_file "$HOME/.zshrc" "Main zsh config"
@@ -93,7 +92,6 @@ done
 
 print_header "Application Configurations"
 configs=(
-    "$HOME/.config/nvim/init.vim:Neovim config"
     "$HOME/.config/gh/config.yml:GitHub CLI config"
     "$HOME/.gitconfig:Git global config"
 )

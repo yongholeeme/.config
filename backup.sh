@@ -26,7 +26,6 @@ declare -A APP_CONFIGS=(
     ["ssh"]="$HOME/.ssh"
     ["gitconfig"]="$HOME/.gitconfig"
     ["zshrc"]="$HOME/.zshrc"
-    ["nvim"]="$HOME/.config/nvim"
     ["gh"]="$HOME/.config/gh"
 )
 

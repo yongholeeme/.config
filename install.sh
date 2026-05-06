@@ -53,16 +53,15 @@ EOF
 # Setup symlinks for other config files
 setup_symlinks() {
     local configs=(
-        "nvim/init.vim:$HOME/.config/nvim/init.vim"
         "gh/config.yml:$HOME/.config/gh/config.yml"
         "gh/hosts.yml:$HOME/.config/gh/hosts.yml"
     )
-    
+
     for config in "${configs[@]}"; do
         local source_file="${config%:*}"
         local target_file="${config#*:}"
         local target_dir="$(dirname "$target_file")"
-        
+
         if [[ -f "$CONFIG_DIR/$source_file" ]]; then
             print_status "Setting up $source_file..."
             mkdir -p "$target_dir"

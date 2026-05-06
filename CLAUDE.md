@@ -13,14 +13,10 @@
 │   ├── fnm.zshrc    # Fast Node Manager
 │   ├── git.zshrc    # Git aliases
 │   ├── nginx.zshrc
-│   ├── nvim.zshrc
 │   ├── rancher.zshrc
-│   ├── warp.zshrc
 │   ├── proxyman.zshrc
 │   ├── claude.zshrc
 │   └── work/        # 회사별 설정 (.gitignore 처리됨)
-├── nvim/            # Neovim 설정
-├── .warp/           # Warp 터미널 테마
 ├── Brewfile         # Homebrew 패키지 목록
 ├── init.sh          # 부트스트랩 (zshrc 덮어쓰기)
 ├── install.sh       # 전체 설치 스크립트

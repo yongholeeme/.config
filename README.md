@@ -47,7 +47,6 @@ git pull origin main
 │   ├── git.zshrc       # Git 설정
 │   ├── nvm.zshrc       # Node.js 관리
 │   └── ...             # 기타 모듈들
-├── nvim/               # Neovim 설정
 ├── gh/                 # GitHub CLI 설정
 ├── fish/               # Fish shell 설정
 └── raycast/            # Raycast 확장
