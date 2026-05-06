@@ -101,7 +101,7 @@ echo 'export WORK_SPECIFIC="value"' > zshrc/work/.zshrc
 ## 📋 체크리스트
 
 새 컴퓨터 설정 시:
-- [ ] `git clone` 및 `./install.sh` 실행
+- [ ] `git clone` 및 `~/.config/install.sh` 실행
 - [ ] 터미널 재시작 또는 `source ~/.zshrc`
 - [ ] 개인 설정 (Git 사용자 정보 등) 추가
 
