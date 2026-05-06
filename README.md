@@ -46,7 +46,6 @@ cd ~/.config && git pull && ./install.sh
 ### 1. 패키지 관리
 - **Homebrew Bundle**: 일관된 패키지 설치
 - **VS Code 확장**: 자동 설치 및 동기화
-- **Mac App Store**: mas를 통한 앱 설치
 
 ### 2. 설정 모듈화
 ```bash
