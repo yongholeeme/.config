@@ -41,14 +41,9 @@ else
     print_warning "Brewfile not found"
 fi
 
-# Setup zsh configuration
-print_status "Setting up zsh configuration..."
-cat > ~/.zshrc << 'EOF'
-### This file is managed by .config/install.sh
-export CONFIG="$HOME/.config"
-source $CONFIG/zshrc/.zshrc
-###
-EOF
+# Set up shell/editor symlinks via init.sh
+print_status "Setting up dotfile symlinks..."
+bash "$CONFIG_DIR/init.sh"
 
 # Setup symlinks for other config files
 setup_symlinks() {
@@ -75,10 +70,6 @@ setup_symlinks
 # macOS-specific settings
 print_status "Applying macOS settings..."
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-
-# Source the new zsh config
-print_status "Reloading shell configuration..."
-source ~/.zshrc 2>/dev/null || true
 
 print_status "✅ Installation completed!"
 print_status "Please restart your terminal or run 'source ~/.zshrc'"

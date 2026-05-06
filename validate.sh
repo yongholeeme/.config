@@ -79,7 +79,7 @@ check_command "code" "VS Code"
 
 print_header "Configuration Files"
 check_file "$HOME/.zshrc" "Main zsh config"
-check_file "$CONFIG_DIR/zshrc/.zshrc" "Modular zsh config"
+check_file "$CONFIG_DIR/.zshrc" "Modular zsh config"
 check_file "$CONFIG_DIR/Brewfile" "Brewfile"
 
 print_header "Shell Configuration Modules"

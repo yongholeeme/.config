@@ -15,21 +15,13 @@
 ### 새 컴퓨터에서 설치
 
 ```bash
-# 1. 저장소 클론
-git clone https://github.com/yongholeeme/.config.git ~/.config
-
-# 2. 설치 실행
-cd ~/.config
-chmod +x install.sh
-./install.sh
+git clone https://github.com/yongholeeme/.config.git ~/.config && ~/.config/install.sh
 ```
 
 ### 기존 설정 업데이트
 
 ```bash
-cd ~/.config
-git pull origin main
-./install.sh
+cd ~/.config && git pull && ./install.sh
 ```
 
 ## 📁 구조

@@ -6,8 +6,8 @@
 
 ```
 .config/
+├── .zshrc           # 메인 로더 (모듈 소싱 순서 중요)
 ├── zshrc/           # 모듈화된 zsh 설정
-│   ├── .zshrc       # 메인 로더 (모듈 소싱 순서 중요)
 │   ├── terminal.zshrc
 │   ├── brew.zshrc   # Homebrew (반드시 fnm보다 먼저 로드)
 │   ├── fnm.zshrc    # Fast Node Manager

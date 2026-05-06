@@ -1,6 +1,4 @@
-echo '### this is overwritten by config/init.sh
-export CONFIG="$HOME/.config"
-source $CONFIG/zshrc/.zshrc
-###' > ~/.zshrc
+ln -sf "$HOME/.config/.zshrc" ~/.zshrc
+ln -sf "$HOME/.config/.vimrc" ~/.vimrc
 
 source ~/.zshrc
