@@ -27,6 +27,7 @@ cask "rancher"
 cask "discord"
 cask "claude"
 cask "claude-code"
+cask "obsidian"
 
 # =============================================================================
 # VS Code Extensions
