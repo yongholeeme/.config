@@ -45,4 +45,4 @@ print_status "Applying macOS settings..."
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 print_status "✅ Installation completed!"
-print_status "Please restart your terminal or run 'source ~/.zshrc'"
+exec zsh -l
