@@ -7,7 +7,6 @@ node_modules
 .DS_Store
 
 # Work-specific configurations (private)
-zshrc/work/
 */work/
 
 # Application data and caches
@@ -30,5 +29,3 @@ backups/
 .env.local
 secrets/
 
-# OS generated files
-Thumbs.db
