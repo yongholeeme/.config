@@ -7,7 +7,6 @@
 - 📦 **Homebrew Bundle**: 패키지 자동 설치
 - 🔧 **모듈형 zsh**: 기능별 분리된 설정
 - 💾 **백업/복원**: 설정 백업 기능
-- ✅ **검증 도구**: 설정 상태 확인
 - 🚀 **원클릭 설치**: 자동 설치 스크립트
 
 ## 🚀 빠른 시작
@@ -30,8 +29,6 @@ cd ~/.config && git pull && ./install.sh
 .config/
 ├── install.sh          # 메인 설치 스크립트
 ├── backup.sh           # 백업/복원 스크립트
-├── validate.sh         # 설정 검증 스크립트
-├── platform.sh         # OS별 분기 처리
 ├── Brewfile            # Homebrew 패키지 정의
 ├── zshrc/              # 모듈형 zsh 설정
 │   ├── .zshrc          # 메인 설정 파일
@@ -66,12 +63,6 @@ source $CONFIG/zshrc/docker.zshrc   # Docker 관련
 
 # 특정 시점으로 복원
 ./backup.sh restore 20231118_143022
-```
-
-### 4. 설정 검증
-```bash
-# 모든 설정 상태 확인
-./validate.sh
 ```
 
 ## 🛠️ 사용법
@@ -121,7 +112,6 @@ fi
 새 컴퓨터 설정 시:
 - [ ] `git clone` 및 `./install.sh` 실행
 - [ ] 터미널 재시작 또는 `source ~/.zshrc`
-- [ ] `./validate.sh`로 설정 확인
 - [ ] 개인 설정 (Git 사용자 정보 등) 추가
 
 ## 🔍 문제 해결

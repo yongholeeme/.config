@@ -20,9 +20,7 @@
 ├── Brewfile         # Homebrew 패키지 목록
 ├── init.sh          # 부트스트랩 (zshrc 덮어쓰기)
 ├── install.sh       # 전체 설치 스크립트
-├── backup.sh        # 설정 백업/복원
-├── validate.sh      # 헬스 체크
-└── platform.sh      # macOS 유틸리티
+└── backup.sh        # 설정 백업/복원
 ```
 
 ## 핵심 규칙
