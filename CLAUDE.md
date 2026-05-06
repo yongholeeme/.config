@@ -15,7 +15,9 @@
 │   ├── nginx.zshrc
 │   ├── rancher.zshrc
 │   ├── proxyman.zshrc
+│   ├── vscode.zshrc # VS Code `code` 명령 PATH
 │   ├── claude.zshrc
+│   ├── starship.zshrc
 │   └── work/        # 회사별 설정 (.gitignore 처리됨)
 ├── Brewfile         # Homebrew 패키지 목록
 ├── init.sh          # 심링크 부트스트랩 (~/.zshrc, ~/.vimrc)
