@@ -145,14 +145,6 @@ brew bundle install
 ./install.sh
 ```
 
-## 🤝 추가 개선 아이디어
-
-1. **Ansible/Chef**: 더 복잡한 설정 관리
-2. **Nix**: 선언적 패키지 관리
-3. **Chezmoi**: 전문 dotfiles 관리 도구
-4. **Docker**: 컨테이너 기반 개발 환경
-5. **Cloud Sync**: 클라우드 기반 설정 동기화
-
 ## 📚 참고 자료
 
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle)
