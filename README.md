@@ -27,18 +27,18 @@ cd ~/.config && git pull && ./install.sh
 
 ```
 .config/
+├── .zshrc              # zsh 메인 로더
+├── .vimrc              # vim 설정
+├── init.sh             # 심링크 부트스트랩
 ├── install.sh          # 메인 설치 스크립트
 ├── backup.sh           # 백업/복원 스크립트
 ├── Brewfile            # Homebrew 패키지 정의
 ├── zshrc/              # 모듈형 zsh 설정
-│   ├── .zshrc          # 메인 설정 파일
-│   ├── brew.zshrc      # Homebrew 관련
+│   ├── brew.zshrc      # Homebrew (fnm보다 먼저)
+│   ├── fnm.zshrc       # Node.js 관리 (fnm)
 │   ├── git.zshrc       # Git 설정
-│   ├── nvm.zshrc       # Node.js 관리
 │   └── ...             # 기타 모듈들
-├── gh/                 # GitHub CLI 설정
-├── fish/               # Fish shell 설정
-└── raycast/            # Raycast 확장
+└── cmux/               # cmux 설정
 ```
 
 ## 🔧 주요 기능
@@ -51,9 +51,9 @@ cd ~/.config && git pull && ./install.sh
 ### 2. 설정 모듈화
 ```bash
 # zsh 설정이 기능별로 분리되어 관리
-source $CONFIG/zshrc/git.zshrc      # Git 관련 설정
-source $CONFIG/zshrc/nvm.zshrc      # Node.js 관리
-source $CONFIG/zshrc/docker.zshrc   # Docker 관련
+source $CONFIG/zshrc/brew.zshrc     # Homebrew 환경
+source $CONFIG/zshrc/fnm.zshrc      # Node.js 관리
+source $CONFIG/zshrc/git.zshrc      # Git aliases
 ```
 
 ### 3. 백업 및 복원
@@ -89,22 +89,13 @@ vscode "publisher.extension-name"
 echo 'export NEW_TOOL_CONFIG="value"' > zshrc/newtool.zshrc
 ```
 
-### 환경별 설정
+### 회사별 설정
 
-**개발/운영 환경 분리**:
+`zshrc/work/` 디렉토리는 .gitignore 처리되며, 존재하면 자동으로 로드됩니다.
+
 ```bash
-# work 디렉토리 생성 (gitignore에 포함됨)
 mkdir -p zshrc/work
 echo 'export WORK_SPECIFIC="value"' > zshrc/work/.zshrc
-```
-
-**OS별 분기**:
-```bash
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    # macOS 전용 설정
-elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    # Linux 전용 설정
-fi
 ```
 
 ## 📋 체크리스트
@@ -140,11 +131,3 @@ brew bundle install
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle)
 - [Dotfiles Best Practices](https://dotfiles.github.io/)
 - [macOS Defaults Commands](https://macos-defaults.com/)
-
----
-
-### Brew 설치 (최초 1회)
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
