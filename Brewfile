@@ -6,7 +6,6 @@ tap "homebrew/bundle"
 # =============================================================================
 # CLI Tools
 # =============================================================================
-brew "neovim"
 brew "gh"
 brew "wget"
 brew "curl"
@@ -16,7 +15,6 @@ brew "fnm"
 # =============================================================================
 # Applications
 # =============================================================================
-cask "warp"
 cask "google-chrome"
 cask "raycast"
 cask "visual-studio-code"
@@ -27,6 +25,8 @@ cask "figma"
 cask "postman"
 cask "rancher"
 cask "discord"
+cask "claude"
+cask "claude-code"
 
 # =============================================================================
 # VS Code Extensions
