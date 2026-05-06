@@ -19,8 +19,7 @@
 │   └── work/        # 회사별 설정 (.gitignore 처리됨)
 ├── Brewfile         # Homebrew 패키지 목록
 ├── init.sh          # 심링크 부트스트랩 (~/.zshrc, ~/.vimrc)
-├── install.sh       # 전체 설치 스크립트
-└── backup.sh        # 설정 백업/복원
+└── install.sh       # 전체 설치 스크립트
 ```
 
 ## 핵심 규칙
