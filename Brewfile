@@ -26,6 +26,7 @@ cask "discord"
 cask "claude"
 cask "claude-code"
 cask "obsidian"
+cask "cmux"
 
 # =============================================================================
 # Fonts
